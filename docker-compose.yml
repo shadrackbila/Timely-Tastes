@@ -1,0 +1,33 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: Timely-Tastes-Container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: timely_tastes_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  drupal:
+    image: drupal:latest
+    container_name: Timely-Tastes-drupal-container
+    depends_on:
+      - mysql
+    ports:
+      - "8082:80"
+    environment:
+      DRUPAL_DB_HOST: mysql
+      DRUPAL_DB_USER: root
+      DRUPAL_DB_PASSWORD: root
+      DRUPAL_DB_NAME: timely_tastes_db
+    volumes:
+      - /Applications/MAMP/htdocs/Timely-Tastes-Docker-Container/timely-tastes-drupal/web:/var/www/html
+    restart: always
+
+volumes:
+  mysql-data:
