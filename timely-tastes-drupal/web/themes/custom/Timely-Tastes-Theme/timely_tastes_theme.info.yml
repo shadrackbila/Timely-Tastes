@@ -1,0 +1,13 @@
+name: Timely Tastes Theme
+type: theme
+description: 'A custom Drupal theme for Timely Tastes.'
+core_version_requirement: ^11
+package: Custom
+base theme: olivero
+
+regions:
+  header: Header
+  primary_menu: 'Primary Menu'
+  content: Content
+  sidebar_first: 'Sidebar First'
+  footer: Footer
