@@ -7,6 +7,10 @@ Run the below comand in the root of this project (smrtbio_container/)
 ```bash
 docker-compose up --build -d
 ```
+after building run :
+```bash
+cat db-init/timely_tastes_db.sql | docker exec -i Timely-Tastes-Container mysql -u root -proot timely_tastes_db
+```
 
 # Access the site
 
