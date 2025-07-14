@@ -1,0 +1,18 @@
+{
+  "name": "timely-tastes-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/style.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "Shadrack Bila",
+  "license": "ISC",
+  "description": "This is V.1 theme for timely-tastes",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.3.5"
+  }
+}

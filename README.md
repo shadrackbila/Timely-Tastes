@@ -26,7 +26,8 @@ docker-compose up --build -d
 
 If you make changes to the Drupal site and want to export the database:
 ```bash
-docker exec -i mariadb mysqldump -u root -proot smrtbio > db-init/smrtbio.sql
+docker exec -i Timely-Tastes-Container mysqldump -u root -proot timely_tastes_db > db-init/timely_tastes_db.sql
+
 ```
 
 # Cleaning Up
