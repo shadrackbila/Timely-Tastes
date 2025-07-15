@@ -3,6 +3,10 @@
     --background-color: #DDEEE6;
     --accent-green: #27AE60;
     --accent-green-hover: #1a723e;
+    --heading-txt-color: #1B5E20;
+    --off-white-bg: #FAFAFA;
+    --ratings-label-text-color: #4F4F4F;
+    --separator-txt-color: #B0B0B0;
 
 }
 
@@ -34,18 +38,53 @@
 
 
     .home-container {
-        @apply w-full h-full bg-white;
+        @apply w-full h-full bg-[var(--off-white-bg)];
     }
+
+    .form-wrapper {
+        @apply pt-6;
+    }
+
 
     .form-wrapper form {
         @apply flex items-center max-w-md mx-auto;
     }
 
     .banner-wrapper {
-        @apply flex justify-center items-center p-2 flex-col;
+        @apply flex justify-center items-center pl-2 pr-2 pt-6 pb-6 flex-col;
     }
 
     .banner-heading {
-        @apply text-lg;
+        @apply text-xl;
+    }
+
+    .section-card {
+        @apply p-6 bg-[var(--background-color)];
+    }
+
+    .section-heading {
+        @apply text-2xl font-bold text-[var(--heading-txt-color)];
+    }
+
+    .card-wrapper {
+        @apply bg-[var(--off-white-bg)] w-full p-2 rounded-lg mt-6;
+    }
+
+    .distance-rating-container {
+        @apply flex flex-row items-center gap-4 justify-end pl-2;
+    }
+
+    .rating-continer {
+        @apply flex flex-row items-center gap-1;
+    }
+
+    .distance,
+    .rating,
+    .separator {
+        @apply text-base text-[var(--ratings-label-text-color)] font-normal;
+    }
+
+    .distance-rating-container .separator {
+        @apply text-[var(--separator-txt-color)];
     }
 }
