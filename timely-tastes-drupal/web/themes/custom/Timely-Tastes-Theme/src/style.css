@@ -1,9 +1,51 @@
+:root {
+
+    --background-color: #DDEEE6;
+    --accent-green: #27AE60;
+    --accent-green-hover: #1a723e;
+
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-/* Custom test class */
-.test-button {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+
+@layer base {
+
+
+    html,
+    body {
+        background-image: none !important;
+        background-color: var(--background-color);
+        padding: 0%;
+        width: 100%;
+
+    }
+
+
+
+
+    .main-content__container.container,
+    .main-content {
+        @apply m-0 p-0 w-full h-[100%];
+    }
+
+
+    .home-container {
+        @apply w-full h-full bg-white;
+    }
+
+    .form-wrapper form {
+        @apply flex items-center max-w-md mx-auto;
+    }
+
+    .banner-wrapper {
+        @apply flex justify-center items-center p-2 flex-col;
+    }
+
+    .banner-heading {
+        @apply text-lg;
+    }
 }

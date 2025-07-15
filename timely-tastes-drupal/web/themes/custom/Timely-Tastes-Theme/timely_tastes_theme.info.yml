@@ -5,9 +5,11 @@ core_version_requirement: ^11
 package: Custom
 base theme: olivero
 
+libraries:
+  - timely_tastes_theme/global-styling 
+
 regions:
   header: Header
   primary_menu: 'Primary Menu'
-  content: Content
-  sidebar_first: 'Sidebar First'
+  home_content: "Home Content"
   footer: Footer
