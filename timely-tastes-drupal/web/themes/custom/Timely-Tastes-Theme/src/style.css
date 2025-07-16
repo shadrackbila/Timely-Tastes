@@ -7,6 +7,7 @@
     --off-white-bg: #FAFAFA;
     --ratings-label-text-color: #4F4F4F;
     --separator-txt-color: #B0B0B0;
+    --half-black: rgba(0, 0, 0, 0.50);
 
 }
 
@@ -87,4 +88,43 @@
     .distance-rating-container .separator {
         @apply text-[var(--separator-txt-color)];
     }
+
+    .card-info {
+        @apply flex flex-row items-start w-full gap-3;
+    }
+
+    .card-info__price-section {
+        @apply flex justify-between items-center w-full;
+    }
+
+    .card-info__price-block {
+        @apply flex flex-row justify-start gap-2 w-full;
+    }
+
+    .card-info__text-details {
+        @apply w-full;
+    }
+
+    .card-info__view-link {
+        @apply w-full;
+
+    }
+
+    .card-info__image {
+        @apply w-[220px] h-[120px] bg-[var(--accent-green)] rounded-xl overflow-hidden;
+    }
+
+    .card-info__name {
+        @apply text-2xl text-[#212121] font-medium;
+    }
+
+    .card-info__discounted-price {
+        @apply text-lg font-bold text-[var(--heading-txt-color)];
+    }
+
+    .card-info__original-price {
+        @apply text-xs font-bold line-through text-[--half-black] leading-normal flex items-center;
+    }
+
+
 }

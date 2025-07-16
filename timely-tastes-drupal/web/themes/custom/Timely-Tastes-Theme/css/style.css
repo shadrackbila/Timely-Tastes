@@ -6,6 +6,7 @@
   --off-white-bg: #FAFAFA;
   --ratings-label-text-color: #4F4F4F;
   --separator-txt-color: #B0B0B0;
+  --half-black: rgba(0, 0, 0, 0.50);
 }
 
 /*
@@ -543,6 +544,71 @@ html,
   color: var(--separator-txt-color);
 }
 
+.card-info {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.card-info__price-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-info__price-block {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.card-info__text-details {
+  width: 100%;
+}
+
+.card-info__view-link {
+  width: 100%;
+}
+
+.card-info__image {
+  height: 120px;
+  width: 220px;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background-color: var(--accent-green);
+}
+
+.card-info__name {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
+.card-info__discounted-price {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: var(--heading-txt-color);
+}
+
+.card-info__original-price {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--half-black);
+  text-decoration-line: line-through;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -709,8 +775,16 @@ html,
   height: 100%;
 }
 
+.h-\[120px\] {
+  height: 120px;
+}
+
 .h-full {
   height: 100%;
+}
+
+.w-\[220px\] {
+  width: 220px;
 }
 
 .w-full {
@@ -729,8 +803,16 @@ html,
   flex-direction: row;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -741,12 +823,24 @@ html,
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-l-md {
@@ -833,8 +927,31 @@ html,
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.text-\[\#212121\] {
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
+.text-\[--half-black\] {
+  color: var(--half-black);
 }
 
 .text-\[var\(--heading-txt-color\)\] {
@@ -857,6 +974,10 @@ html,
 .text-yellow-800 {
   --tw-text-opacity: 1;
   color: rgb(133 77 14 / var(--tw-text-opacity));
+}
+
+.line-through {
+  text-decoration-line: line-through;
 }
 
 .hover\:bg-\[var\(--accent-green-hover\)\]:hover {
