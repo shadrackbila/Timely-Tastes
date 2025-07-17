@@ -8,6 +8,7 @@
     --ratings-label-text-color: #4F4F4F;
     --separator-txt-color: #B0B0B0;
     --half-black: rgba(0, 0, 0, 0.50);
+    --pick-up-text-color: #6D6D6D;
 
 }
 
@@ -26,6 +27,7 @@
         background-color: var(--background-color);
         padding: 0%;
         width: 100%;
+        box-sizing: border-box;
 
     }
 
@@ -60,7 +62,7 @@
     }
 
     .section-card {
-        @apply p-6 bg-[var(--background-color)];
+        @apply py-6 px-4 bg-[var(--background-color)];
     }
 
     .section-heading {
@@ -68,11 +70,11 @@
     }
 
     .card-wrapper {
-        @apply bg-[var(--off-white-bg)] w-full p-2 rounded-lg mt-6;
+        @apply bg-[var(--off-white-bg)] w-full py-2 px-3 rounded-lg mt-6;
     }
 
     .distance-rating-container {
-        @apply flex flex-row items-center gap-4 justify-end pl-2;
+        @apply flex flex-row items-center gap-4 justify-end pr-2;
     }
 
     .rating-continer {
@@ -90,7 +92,7 @@
     }
 
     .card-info {
-        @apply flex flex-row items-start w-full gap-3;
+        @apply flex flex-row items-start w-full gap-3 mt-3 mb-3;
     }
 
     .card-info__price-section {
@@ -106,12 +108,21 @@
     }
 
     .card-info__view-link {
-        @apply w-full;
+        @apply w-full flex justify-end pr-1 text-base font-normal text-[--half-black];
 
     }
 
+
     .card-info__image {
         @apply w-[220px] h-[120px] bg-[var(--accent-green)] rounded-xl overflow-hidden;
+    }
+
+    .card-info__image div {
+        @apply flex justify-center items-center w-full h-full;
+    }
+
+    .card-info__image img {
+        @apply object-cover w-full h-full;
     }
 
     .card-info__name {
@@ -125,6 +136,54 @@
     .card-info__original-price {
         @apply text-xs font-bold line-through text-[--half-black] leading-normal flex items-center;
     }
+
+    .card-info__pickup-info {
+        @apply text-sm font-medium text-[var(--pick-up-text-color)];
+    }
+
+    .reserve-buttons {
+        @apply flex flex-row justify-between gap-2;
+    }
+
+    .buttons {
+        @apply w-full flex items-center justify-center h-full box-border text-base font-normal my-4;
+    }
+
+    .buttons div {
+        @apply w-full h-full flex items-center justify-center;
+    }
+
+    .reserve-buttons__reserve a {
+        @apply w-full bg-[var(--accent-green)] border-2 border-transparent text-white;
+
+    }
+
+    .reserve-buttons__favourites a {
+        @apply w-full border-solid border-[var(--accent-green)] border-2;
+    }
+
+    .reserve-buttons__reserve a,
+    .reserve-buttons__favourites a {
+        @apply flex items-center justify-center text-center py-2 px-4 rounded h-12 box-border transition duration-300 ease-in-out;
+    }
+
+    .reserve-buttons__favourites svg {
+        @apply w-6 fill-[var(--accent-green)];
+    }
+
+    .reserve-buttons__favourites a:hover svg {
+        @apply w-6 fill-white;
+    }
+
+    .reserve-buttons__favourites a:hover {
+        @apply bg-[var(--accent-green)];
+    }
+
+    .reserve-buttons__reserve a:hover {
+        @apply bg-white text-[var(--accent-green)] border-[var(--accent-green)];
+    }
+
+
 
 
 }
