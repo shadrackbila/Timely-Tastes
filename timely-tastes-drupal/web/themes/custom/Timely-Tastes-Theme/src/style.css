@@ -9,6 +9,8 @@
     --separator-txt-color: #B0B0B0;
     --half-black: rgba(0, 0, 0, 0.50);
     --pick-up-text-color: #6D6D6D;
+    --more-items-left-color: #FFF3C1;
+    --logo-size: 4rem;
 
 }
 
@@ -70,7 +72,7 @@
     }
 
     .card-wrapper {
-        @apply bg-[var(--off-white-bg)] w-full py-2 px-3 rounded-lg mt-6;
+        @apply bg-[var(--off-white-bg)] w-full py-2 px-3 rounded-lg mt-24 shadow-custom-black;
     }
 
     .distance-rating-container {
@@ -142,7 +144,7 @@
     }
 
     .reserve-buttons {
-        @apply flex flex-row justify-between gap-2 pb-10;
+        @apply flex flex-row justify-between gap-2 pb-4;
     }
 
     .buttons {
@@ -183,7 +185,49 @@
         @apply bg-white text-[var(--accent-green)] border-[var(--accent-green)];
     }
 
+    .qs {
+        @apply flex justify-center w-full relative;
+    }
+
+    .qs__container {
+        @apply absolute -top-2 w-fit;
+    }
+
+    .qs__container>div {
+        @apply relative w-fit;
+    }
+
+    .qs__container>div>div:last-child {
+        @apply bg-[var(--more-items-left-color)] py-1 px-2 text-base font-normal text-[var(--heading-txt-color)];
+    }
 
 
+    .l-half-shadow {
+        @apply absolute bottom-0 left-0 h-1/2 w-full shadow-custom-black pointer-events-none;
+    }
+
+    .logo__shadow {
+        @apply w-[var(--logo-size)] h-[var(--logo-size)] flex justify-center items-center overflow-hidden shadow-custom-black rounded-full;
+    }
+
+    .logo__shadow img {
+        @apply w-full h-full object-cover;
+    }
+
+    .logo__rect {
+        @apply w-[var(--logo-size)] flex justify-center;
+    }
+
+    .logo__rect div {
+        @apply w-4 h-4 bg-[var(--off-white-bg)];
+    }
+
+    .logo__comp {
+        @apply flex justify-center w-fit flex-col absolute -top-[5.5rem];
+    }
+
+    .logo {
+        @apply relative h-0;
+    }
 
 }

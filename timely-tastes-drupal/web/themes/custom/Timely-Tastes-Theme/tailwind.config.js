@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+
+      boxShadow: {
+        'custom-black': '-4px 4px 4px rgba(0, 0, 0, 0.3)',
+      },
+
       screens: {
 
         'surface-duo-only': { 'raw': '(min-width: 480px) and (max-width: 767px)' },
