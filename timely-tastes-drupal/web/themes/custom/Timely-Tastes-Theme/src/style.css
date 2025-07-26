@@ -23,6 +23,7 @@
 @layer base {
 
 
+
     html,
     body {
         background-image: none !important;
@@ -33,6 +34,142 @@
 
     }
 
+
+
+    /*~~~~~~~~~~Meal-Deal-Page css starts here~~~~~~~~~~~~*/
+    .meal-deal-container .qs__container {
+        @apply -top-4;
+    }
+
+    .ratings__logo {
+        @apply w-32 flex justify-center items-center border-solid border-r-4 pr-2 border-[var(--separator-txt-color)];
+    }
+
+    .ratings__logo img {
+        @apply object-cover;
+    }
+
+    .ratings__logo>div:nth-child(1) {
+        @apply w-20;
+    }
+
+    .ratings__logo>div:nth-child(2) {
+        @apply text-[40px] font-normal leading-normal text-[var(--ratings-label-text-color)];
+    }
+
+    .ratings-container {
+        @apply flex gap-3 mt-10 justify-center items-center;
+    }
+
+    .rate-container {
+        @apply flex w-full justify-between;
+    }
+
+    .rate-container>div:last-child {
+        @apply text-xl font-medium leading-normal text-[var(--pick-up-text-color)] flex justify-center items-center p-1;
+    }
+
+    .rate-type {
+        @apply w-full text-base font-medium leading-normal text-[var(--pick-up-text-color)];
+    }
+
+    .rate-type>div:last-child {
+        @apply
+        /*w-[50%]*/
+        h-[10px] bg-[var(--background-color)] mt-2 rounded-md;
+    }
+
+    .rates-wrapper {
+        @apply mt-10 px-3 flex flex-col gap-6;
+    }
+
+
+    .store__logo {
+        @apply w-20 h-20 rounded-full overflow-hidden;
+    }
+
+    .store__logo div,
+    .ratings__logo div {
+        @apply w-full h-full flex items-center justify-center;
+    }
+
+    .store__logo img {
+        @apply w-full h-full object-cover;
+    }
+
+    .store {
+        @apply flex gap-3 mt-10;
+    }
+
+    .store__data {
+        @apply text-2xl font-bold leading-normal text-black;
+    }
+
+    .ratings__data {
+        @apply text-base font-normal leading-normal text-[var(--ratings-label-text-color)];
+    }
+
+    .vendor-info__title {
+        @apply text-2xl font-bold leading-normal text-[var(--heading-txt-color)];
+    }
+
+    .meal-deal-container {
+        @apply w-full flex flex-col justify-center bg-[var(--background-color)] px-3 pt-20;
+    }
+
+    .vendor-info {
+        @apply px-3 pt-14 pb-40;
+    }
+
+    .full-image {
+        @apply w-full rounded-2xl overflow-hidden;
+    }
+
+
+    .full-image-wrapper {
+        @apply w-full h-full;
+    }
+
+
+    .distance-rating-wrapper {
+        @apply flex justify-end items-start;
+    }
+
+    .distance-rating-wrapper .distance-rating-container {
+        @apply bg-white absolute;
+    }
+
+
+    .product {
+        @apply mt-10 ml-3;
+    }
+
+    .product__title {
+        @apply font-medium leading-normal text-[27px] text-[#212121];
+    }
+
+    .product .card-info__discounted-price {
+        @apply text-2xl leading-normal font-bold;
+    }
+
+
+    .product .card-info__original-price {
+        @apply text-[15px];
+    }
+
+    .product .card-info__pickup-info {
+        @apply text-base;
+    }
+
+    .product__desc {
+        @apply text-xl font-normal leading-normal text-[#656565] my-4;
+    }
+
+    .warning-txt {
+        @apply w-full flex justify-center items-center text-[15px] font-normal leading-normal opacity-50 my-4;
+    }
+
+    /*~~~~~~~~~~Meal-Deal-Page css ends here~~~~~~~~~~~~*/
 
 
 
@@ -148,7 +285,7 @@
     }
 
     .buttons {
-        @apply w-full flex items-center justify-center h-full box-border text-base font-normal my-4;
+        @apply w-full flex items-center justify-center h-full box-border text-base font-normal my-4 bg-white;
     }
 
     .buttons div {
@@ -229,5 +366,6 @@
     .logo {
         @apply relative h-0;
     }
+
 
 }

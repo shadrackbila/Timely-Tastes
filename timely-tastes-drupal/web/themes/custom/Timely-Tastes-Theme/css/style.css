@@ -457,6 +457,240 @@ html,
   box-sizing: border-box;
 }
 
+/*~~~~~~~~~~Meal-Deal-Page css starts here~~~~~~~~~~~~*/
+
+.meal-deal-container .qs__container {
+  top: -1rem;
+}
+
+.ratings__logo {
+  display: flex;
+  width: 8rem;
+  align-items: center;
+  justify-content: center;
+  border-right-width: 4px;
+  border-style: solid;
+  border-color: var(--separator-txt-color);
+  padding-right: 0.5rem;
+}
+
+.ratings__logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ratings__logo>div:nth-child(1) {
+  width: 5rem;
+}
+
+.ratings__logo>div:nth-child(2) {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--ratings-label-text-color);
+}
+
+.ratings-container {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.rate-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.rate-container>div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--pick-up-text-color);
+}
+
+.rate-type {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--pick-up-text-color);
+}
+
+.rate-type>div:last-child {
+  margin-top: 0.5rem;
+  height: 10px;
+  border-radius: 0.375rem;
+  background-color: var(--background-color);
+}
+
+.rates-wrapper {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.store__logo {
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.store__logo div,
+    .ratings__logo div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.store__logo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.store {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.store__data {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.ratings__data {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--ratings-label-text-color);
+}
+
+.vendor-info__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--heading-txt-color);
+}
+
+.meal-deal-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 5rem;
+}
+
+.vendor-info {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 3.5rem;
+  padding-bottom: 10rem;
+}
+
+.full-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.full-image-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.distance-rating-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.distance-rating-wrapper .distance-rating-container {
+  position: absolute;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.product {
+  margin-top: 2.5rem;
+  margin-left: 0.75rem;
+}
+
+.product__title {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.5;
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
+.product .card-info__discounted-price {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.product .card-info__original-price {
+  font-size: 15px;
+}
+
+.product .card-info__pickup-info {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.product__desc {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  --tw-text-opacity: 1;
+  color: rgb(101 101 101 / var(--tw-text-opacity));
+}
+
+.warning-txt {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+/*~~~~~~~~~~Meal-Deal-Page css ends here~~~~~~~~~~~~*/
+
 .main-content__container.container,
     .main-content {
   margin: 0px;
@@ -670,6 +904,8 @@ html,
   width: 100%;
   align-items: center;
   justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -1013,8 +1249,25 @@ html,
   margin: 0px;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-24 {
@@ -1045,12 +1298,20 @@ html,
   height: 3rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-4 {
   height: 1rem;
 }
 
 .h-\[100\%\] {
   height: 100%;
+}
+
+.h-\[10px\] {
+  height: 10px;
 }
 
 .h-\[120px\] {
@@ -1065,6 +1326,14 @@ html,
   height: 100%;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1073,8 +1342,16 @@ html,
   width: 1.5rem;
 }
 
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .w-\[220px\] {
   width: 220px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[var\(--logo-size\)\] {
@@ -1088,6 +1365,14 @@ html,
 
 .w-full {
   width: 100%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[26\%\] {
+  width: 26%;
 }
 
 .max-w-md {
@@ -1150,6 +1435,14 @@ html,
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1176,12 +1469,20 @@ html,
   border-width: 2px;
 }
 
+.border-r-4 {
+  border-right-width: 4px;
+}
+
 .border-solid {
   border-style: solid;
 }
 
 .border-\[var\(--accent-green\)\] {
   border-color: var(--accent-green);
+}
+
+.border-\[var\(--separator-txt-color\)\] {
+  border-color: var(--separator-txt-color);
 }
 
 .border-gray-300 {
@@ -1270,12 +1571,20 @@ html,
   padding-left: 0.5rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pr-1 {
   padding-right: 0.25rem;
 }
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .pt-6 {
@@ -1291,6 +1600,18 @@ html,
   line-height: 2rem;
 }
 
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.text-\[27px\] {
+  font-size: 27px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1304,6 +1625,11 @@ html,
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -1330,6 +1656,11 @@ html,
 .text-\[\#212121\] {
   --tw-text-opacity: 1;
   color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
+.text-\[\#656565\] {
+  --tw-text-opacity: 1;
+  color: rgb(101 101 101 / var(--tw-text-opacity));
 }
 
 .text-\[--half-black\] {
@@ -1368,6 +1699,10 @@ html,
 
 .line-through {
   text-decoration-line: line-through;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .shadow-custom-black {

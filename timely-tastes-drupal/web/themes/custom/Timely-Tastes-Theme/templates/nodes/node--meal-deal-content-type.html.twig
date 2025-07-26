@@ -1,0 +1,235 @@
+{#
+/**
+* @file
+* Olivero's implementation to display a block.
+*
+* Available variables:
+* - layout: String that will determine the layout of the block.
+* - plugin_id: The ID of the block implementation.
+* - label: The configured label of the block if visible.
+* - configuration: A list of the block's configuration values.
+* - label: The configured label for the block.
+* - label_display: The display settings for the label.
+* - provider: The module or other provider that provided this block plugin.
+* - Block plugin specific settings will also be stored here.
+* - in_preview: Whether the plugin is being rendered in preview mode.
+* - content: The content of this block.
+* - attributes: array of HTML attributes populated by modules, intended to
+* be added to the main container tag of this template.
+* - id: A valid HTML ID and guaranteed unique.
+* - title_attributes: Same as attributes, except applied to the main title
+* tag that appears in the template.
+* - content_attributes: Same as attributes, except applied to the main content
+* tag that appears in the template.
+* - title_prefix: Additional output populated by modules, intended to be
+* displayed in front of the main title tag that appears in the template.
+* - title_suffix: Additional output populated by modules, intended to be
+* displayed after the main title tag that appears in the template.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+<!--Meal Deal Page-->
+
+<body>
+    <div class="meal-deal-container">
+        <div class="full-image-wrapper">
+
+            <div class="distance-rating-wrapper">
+                <div class="distance-rating-container ">
+
+                    <div class="distance">
+                        <div class="pl-3">
+                            45km
+                        </div>
+                    </div>
+
+                    <div class="separator">
+                        |
+                    </div>
+
+                    <div class="rating-continer">
+                        <div class="star-img">
+                            <img src="{{ directory }}/images/star.png" alt="">
+                        </div>
+                        <div class="rating">
+                            <div>
+                                4.7
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-image">
+                <img src="{{ directory }}/images/rolls.jpg" alt="rolls">
+            </div>
+
+
+            <div class="qs">
+                <div class="qs__container">
+                    <div class="relative">
+
+                        <div class="relative z-10">
+                            5 Packs Left
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <div class="product__title">
+                Bread and buns
+            </div>
+
+            <div class="card-info__price-block">
+                <div class="card-info__discounted-price">
+                    <div>
+                        R30
+                    </div>
+                </div>
+
+                <div class="card-info__original-price">
+                    <div>
+                        R237
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-info__pickup-info">
+                Pickup<span class="ml-2">17:00 - 18:00</span>
+            </div>
+
+
+            <div class="product__desc">
+                Freshly baked or surplus bread items
+                such as rolls, burger buns, loaves, or
+                sandwich slices. Perfect for toasting,
+                snacking, or building the ultimate sandwich. Contents may vary depending on availability.
+            </div>
+
+        </div>
+
+
+        <div class="warning-txt">
+            ❗Contents may vary
+        </div>
+
+        <div class="reserve-buttons">
+            <div class="buttons reserve-buttons__favourites">
+                <div>
+                    <a href="">
+                        <svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16"
+                            xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="buttons reserve-buttons__reserve">
+                <div>
+                    <a href="">Reserve Now</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="vendor-info">
+        <div class="vendor-info__title">
+            Vendor Info
+        </div>
+
+        <div class="store">
+            <div class="store__logo">
+                <div>
+                    <img src="{{ directory }}/images/rolls.jpg" alt="">
+                </div>
+            </div>
+            <div class="store__data">
+                <div>Deboniars pizza</div>
+                <div>Willows</div>
+            </div>
+        </div>
+
+
+
+        <div class="ratings-container">
+            <div class="ratings__logo">
+                <div>
+                    <img src="{{ directory }}/images/star copy.png" alt="">
+                </div>
+                <div>
+                    4.7
+                </div>
+            </div>
+
+            <div class="ratings__data">
+                <div>Approximately 4.7km away</div>
+                <div>Based on 400+ reviews</div>
+                <div>Saved 872+ Meals</div>
+            </div>
+
+
+
+        </div>
+
+        <div class="rates-wrapper">
+            <div class="rate-container">
+                <div class="rate-type">
+                    <div>Collection Experience</div>
+                    <div class="w-[26%]"></div>
+                </div>
+                <div>
+                    1.3
+                </div>
+            </div>
+
+
+            <div class="rate-container">
+                <div class="rate-type">
+                    <div>Food Quality</div>
+                    <div class="w-[100%]"></div>
+                </div>
+                <div>
+                    5.0
+                </div>
+            </div>
+
+            <div class="rate-container">
+                <div class="rate-type">
+                    <div>Food Quantity</div>
+                    <div class="w-[70%]"></div>
+                </div>
+                <div>
+                    3.5
+                </div>
+            </div>
+
+            <div class="rate-container">
+                <div class="rate-type">
+                    <div>Food Variety</div>
+                    <div class="w-[50%]"></div>
+                </div>
+                <div>
+                    2.5
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
