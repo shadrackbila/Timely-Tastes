@@ -34,6 +34,63 @@
 
     }
 
+    /*~~~~~~~~~~Order-Page css starts here~~~~~~~~~~~~*/
+
+    .order {
+        @apply px-3 pt-10 w-full h-full flex items-center justify-center bg-[var(--background-color)];
+    }
+
+    .order__container {
+        @apply w-full h-full bg-[var(--off-white-bg)] px-6 pt-10 pb-5 rounded-lg shadow-custom-black;
+    }
+
+    .order__original-price,
+    .order__discount-price {
+
+        @apply py-2 items-end flex justify-between flex-row border-b border-b-[var(--background-color)];
+    }
+
+    .order__original-price>div:first-child {
+        @apply w-fit text-base leading-normal font-normal text-[--half-black];
+
+    }
+
+    .order__original-price>div:last-child {
+        @apply w-fit text-base leading-normal font-bold text-[--half-black] line-through;
+
+    }
+
+    .order__discount-price>div:first-child {
+        @apply w-fit text-xl font-normal leading-normal text-[var(--heading-txt-color)] flex justify-start items-end;
+    }
+
+    .order__discount-price>div:last-child {
+        @apply w-fit text-2xl font-bold leading-normal text-[var(--heading-txt-color)] flex items-end;
+    }
+
+    .terms-conditions {
+        @apply flex justify-center text-[--half-black] text-[13px] font-normal leading-normal pt-10 pb-5;
+    }
+
+    .terms-conditions a {
+        @apply not-italic underline underline-offset-auto;
+    }
+
+    .pin-container {
+        @apply w-full flex justify-center items-center flex-col my-20;
+    }
+
+    .pin-container>div:first-child {
+        @apply text-[--half-black] font-normal text-[13px];
+    }
+
+    .pin-container>div:last-child {
+        @apply text-[var(--heading-txt-color)] border-b border-b-[var(--half-black)] font-extrabold text-5xl;
+    }
+
+    /*~~~~~~~~~~Order-Page css ends here~~~~~~~~~~~~*/
+
+
 
 
     /*~~~~~~~~~~Meal-Deal-Page css starts here~~~~~~~~~~~~*/
@@ -144,7 +201,8 @@
         @apply mt-10 ml-3;
     }
 
-    .product__title {
+    .product__title,
+    .page__title {
         @apply font-medium leading-normal text-[27px] text-[#212121];
     }
 
@@ -161,8 +219,13 @@
         @apply text-base;
     }
 
-    .product__desc {
+    .product__desc,
+    .order__details {
         @apply text-xl font-normal leading-normal text-[#656565] my-4;
+    }
+
+    .order__details span {
+        @apply font-semibold;
     }
 
     .warning-txt {
@@ -297,8 +360,12 @@
 
     }
 
+    .reserve-buttons__favourites a:hover {
+        @apply text-white;
+    }
+
     .reserve-buttons__favourites a {
-        @apply w-full border-solid border-[var(--accent-green)] border-2;
+        @apply w-full text-[var(--accent-green)] border-solid border-[var(--accent-green)] border-2;
     }
 
     .reserve-buttons__reserve a,

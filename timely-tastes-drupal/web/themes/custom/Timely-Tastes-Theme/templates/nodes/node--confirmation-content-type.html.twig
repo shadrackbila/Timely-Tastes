@@ -1,0 +1,85 @@
+{#
+/**
+* @file
+* Olivero's implementation to display a block.
+*
+* Available variables:
+* - layout: String that will determine the layout of the block.
+* - plugin_id: The ID of the block implementation.
+* - label: The configured label of the block if visible.
+* - configuration: A list of the block's configuration values.
+* - label: The configured label for the block.
+* - label_display: The display settings for the label.
+* - provider: The module or other provider that provided this block plugin.
+* - Block plugin specific settings will also be stored here.
+* - in_preview: Whether the plugin is being rendered in preview mode.
+* - content: The content of this block.
+* - attributes: array of HTML attributes populated by modules, intended to
+* be added to the main container tag of this template.
+* - id: A valid HTML ID and guaranteed unique.
+* - title_attributes: Same as attributes, except applied to the main title
+* tag that appears in the template.
+* - content_attributes: Same as attributes, except applied to the main content
+* tag that appears in the template.
+* - title_prefix: Additional output populated by modules, intended to be
+* displayed in front of the main title tag that appears in the template.
+* - title_suffix: Additional output populated by modules, intended to be
+* displayed after the main title tag that appears in the template.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+<!--Order Page-->
+
+<body class=" ">
+
+    <div class="order">
+        <div class="order__container">
+            <div class="page__title">
+                Order Confirmed!
+            </div>
+
+            <div class="order__details">
+                <div class="mt-10 mb-5">Your Order <span class="text-[#85AD88]">#123456 </span>is confirmed</div>
+                <div><span>Pickup from: </span>6PM–7PM Today</div>
+                <div><span>Address: </span>123 Main Rd, Rondebosch</div>
+                <div class=" mt-5">Show this pin on arrival:</div>
+            </div>
+
+
+            <div class="pin-container">
+
+                <div>
+                    Use Pin:
+                </div>
+                <div>
+                    2875
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="reserve-buttons">
+                <div class="buttons reserve-buttons__favourites">
+                    <div>
+                        <a href="">
+                            Open in Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="buttons reserve-buttons__reserve">
+                    <div>
+                        <a href="">Share</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
